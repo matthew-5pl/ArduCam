@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ArduCam</string>
+    <string name="welcome_str">Benvenuto. Scegli una modalita\'.</string>
+    <string name="cur_rec">Registrazione in corso...</string>
+</resources>

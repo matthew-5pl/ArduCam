@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="61dp"
+        android:text="@string/welcome_str"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cameraModeBtn"
+        android:layout_width="138dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="13dp"
+        android:alpha="0"
+        android:backgroundTint="@color/purple_700"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/serverModeBtn"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/camera_icn" />
+
+    <ImageButton
+        android:id="@+id/monitorModeBtn"
+        android:layout_width="138dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:backgroundTint="@color/purple_700"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/serverModeBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cameraModeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cameraModeBtn"
+        app:srcCompat="@drawable/monitor_icn" />
+
+    <ImageButton
+        android:id="@+id/serverModeBtn"
+        android:layout_width="138dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="67dp"
+        android:alpha="0"
+        android:backgroundTint="@color/purple_700"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/server_icn" />
+
+    <EditText
+        android:id="@+id/serverAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Indirizzo Server"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/monitorModeBtn"
+        app:layout_constraintStart_toStartOf="@+id/monitorModeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/monitorModeBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
